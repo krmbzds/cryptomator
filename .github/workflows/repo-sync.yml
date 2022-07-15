@@ -1,0 +1,22 @@
+name: Scheduled Merge Remote Action
+on:
+  schedule:
+  - cron:  "0 0 * * 1"
+  workflow_dispatch:
+
+jobs:
+  merge-upstream:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          ref: develop
+          fetch-depth: 0 
+      - name: Merge Upstream
+        uses: exions/merge-upstream@v1
+        with:
+          upstream: cryptomator/cryptomator
+          upstream-branch: develop
+          branch: develop
+          token: ${{ secrets.CRYPTOMATOR_RELEASE_TOKEN }}
