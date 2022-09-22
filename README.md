@@ -32,9 +32,16 @@ Cryptomator is provided free of charge as an open-source project despite the hig
   <tbody>
     <tr>
       <td><a href="https://mowcapital.com/"><img src="https://cryptomator.org/img/sponsors/mowcapital.svg" alt="Mow Capital" height="40"></a></td>
+      <td><a href="https://www.easeus.com/"><img src="https://cryptomator.org/img/sponsors/easeus.png" alt="EaseUS" height="40"></a></td>
     </tr>
   </tbody>
 </table>
+
+### Special Shoutout
+
+Continuous integration hosting for ARM64 builds is provided by [MacStadium](https://www.macstadium.com/opensource).
+
+<a href="https://www.macstadium.com/opensource"><img src="https://uploads-ssl.webflow.com/5ac3c046c82724970fc60918/5c019d917bba312af7553b49_MacStadium-developerlogo.png" alt="MacStadium" height="100"></a>
 
 ---
 
@@ -85,7 +92,7 @@ For more information on the security details visit [cryptomator.org](https://doc
 
 ```
 mvn clean install
-# or mvn clean install -Pwindows
+# or mvn clean install -Pwin
 # or mvn clean install -Pmac
 # or mvn clean install -Plinux
 ```
